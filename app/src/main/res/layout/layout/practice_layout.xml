@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.3">
+
+        <TextView
+            android:id="@+id/title_page"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="Practice"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.1"
+        android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/sound_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/sound_button"
+        android:layout_weight="0.65">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:padding="5dp"
+            android:rowCount="8">
+
+            <Button
+                android:id="@+id/unison_button"
+                style="@style/CustomButton"
+                android:text="@string/unison" />
+
+            <Button
+                android:id="@+id/octave_button"
+                style="@style/CustomButton"
+                android:text="@string/octave" />
+
+            <Button
+                android:id="@+id/minor2_button"
+                style="@style/CustomButton"
+                android:text="@string/minor2" />
+
+            <Button
+                android:id="@+id/major2_button"
+                style="@style/CustomButton"
+                android:text="@string/major2" />
+
+            <Button
+                android:id="@+id/minor3_button"
+                style="@style/CustomButton"
+                android:text="@string/minor3" />
+
+            <Button
+                android:id="@+id/major3_button"
+                style="@style/CustomButton"
+                android:text="@string/major3" />
+
+            <Button
+                android:id="@+id/perfect4_button"
+                style="@style/CustomButton"
+                android:text="@string/perfect4" />
+
+            <Button
+                android:id="@+id/perfect5_button"
+                style="@style/CustomButton"
+                android:text="@string/perfect5" />
+
+            <Button
+                android:id="@+id/minor6_button"
+                style="@style/CustomButton"
+                android:text="@string/minor6" />
+
+            <Button
+                android:id="@+id/major6_button"
+                style="@style/CustomButton"
+                android:text="@string/major6" />
+
+            <Button
+                android:id="@+id/minor7_button"
+                style="@style/CustomButton"
+                android:text="@string/minor7" />
+
+            <Button
+                android:id="@+id/major7_button"
+                style="@style/CustomButton"
+                android:text="@string/major7" />
+        </GridLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/rev_ans"
+        style="@style/CustomButton"
+        android:layout_gravity="center"
+        android:text="@string/mainMenu" />
+
+
+</LinearLayout>
